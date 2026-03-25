@@ -29,9 +29,25 @@
       margin: 0 10px;
     }
 
-    button {
+      button {
       background-color: white;
-       box-shadow: 0 0 15px rgba(255, 255, 255, 0.9),
+      color: #d2b48c;
+      border: none;
+      outline: none; /* removes black outline */
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    button:focus {
+      outline: none; /* removes outline on click */
+    }
+       button:hover {
+      background-color: #eee;
+      /* NEW GLOW EFFECT BELOW */
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.9),
                   0 0 30px rgba(255, 255, 255, 0.7),
                   0 0 45px rgba(255, 255, 255, 0.5);
       /* NEW SCALE EFFECT */
