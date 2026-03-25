@@ -1,43 +1,72 @@
-<html>
+<!DOCTYPE html>
+<html lang="hu">
 <head>
+    <meta charset="UTF-8">
+    <title>Rólam - Lux Orsolya</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            /* Fontos: A kép elérési útja legyen pontos! */
+            background: url('aura2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ff758f; /* Javított színkód */
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff758f;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white; /* A fejlécben a szöveg legyen fehér a kontraszt miatt */
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.8); /* Félig átlátszó fehér háttér a szöveg alatt */
+            margin: 50px auto;
+            padding: 30px;
+            max-width: 600px;
+            border-radius: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ff758f;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
 
 <header>
-
+    <div style="font-weight: bold;">Portfólió</div>
+    <nav>
+        <a href="index.html" style="color: white;">Főoldal</a>
+    </nav>
 </header>
 
-
- <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('aura2.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: ff758f;
-      text-align: center;
-    }
-   header {
-      background-color: #ff758f;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    h1 {
-      margin: 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      margin: 0 10px;
-    }
-  </style>
-</head>
-<body>
+<div class="content">
     <h1>Rólam</h1> 
-  <p>Lux Orsolya vagyok, 21 éves és a Pécsi Tudományegyetem Művészeti Karán, Tárgyalkotás szakon vagyok textil/kárpit specializációs hallgató.
-    Jelenleg másodéves vagyok, 2027-ben fogom megszerezni a diplomámat.</p>
-  <a href="index.html">⬅ Back</a>
+    <p> Lux Orsolya vagyok, 21 éves és a Pécsi Tudományegyetem Művészeti Karán, Tárgyalkotás szakon vagyok textil/kárpit specializációs hallgató.</p>
+    <p>Jelenleg másodéves vagyok, 2027-ben fogom megszerezni a diplomámat.</p>
+    
+    <nav>
+        <a href="index.html">⬅ Vissza a főoldalra</a>
+    </nav>
+</div>
+
 </body>
 </html>
