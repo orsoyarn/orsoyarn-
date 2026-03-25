@@ -1,82 +1,100 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <title>Orsoyarn</title>
-  <style>
-    body {
- margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('aura2.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orsoyarn - Főoldal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('aura2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-    header {
-      background-color: #ff758f;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+        header {
+            background-color: #ff758f;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
 
-    h1 {
-      margin: 0;
-    }
+        h1 {
+            margin: 0;
+            font-letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
 
-    nav a {
-      text-decoration: none;
-      margin: 0 10px;
-    }
+        nav a {
+            text-decoration: none;
+            margin-left: 15px;
+        }
 
-      button {
-      background-color: white;
-      color: #ffccd5;
-      border: none;
-      outline: none; /* removes black outline */
-      padding: 10px 15px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
+        button {
+            background-color: white;
+            color: #ff758f;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px; /* Kerekítettebb, modernebb gombok */
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
 
-    button:focus {
-      outline: none; /* removes outline on click */
-    }
-       button:hover {
-      background-color: #eee;
-      /* NEW GLOW EFFECT BELOW */
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0,9),
-                  0 0 30px rgba(255, 255, 255, 0.7),
-                  0 0 45px rgba(255, 255, 255, 0.5);
-      /* NEW SCALE EFFECT */
-      transform: translateY(-2px) scale(1.05);
-    }
+        button:hover {
+            background-color: #fff0f3;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.8),
+                        0 0 40px rgba(255, 255, 255, 0.4);
+            transform: translateY(-3px) scale(1.05);
+        }
 
-    button:hover {
-      background-color: #eee;
-    }
+        .hero-section {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.1); /* Enyhe sötétítés, hogy a fehér szöveg kiugorjon */
+        }
 
-    .content {
-      margin-top: 100px;
-      font-size: 24px;
-    }
-  </style>
+        .hero-text h2 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-  <h1>Orsoyarn</h1>
-  <nav>
-    <a href="about.html"><button>Rólam</button></a>
-    <a href="contact.html"><button>Elérhetőség</button></a>
-    <a href="works.html"><button>Munkák</button></a>
-  </nav>
+    <h1>Orsoyarn</h1>
+    <nav>
+        <a href="about.html"><button>Rólam</button></a>
+        <a href="works.html"><button>Munkák</button></a>
+        <a href="contact.html"><button>Elérhetőség</button></a>
+    </nav>
 </header>
 
-<div class="content">
-  
+<div class="hero-section">
+    <div class="hero-text">
+        <h2>Üdvözöllek!</h2>
+        <p>Lux Orsolya | Textil- és kárpitművész hallgató</p>
+    </div>
 </div>
 
 </body>
