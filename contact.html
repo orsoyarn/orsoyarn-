@@ -1,27 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="hu">
 <head>
-  <title>Elérhetőség</title>
     <meta charset="UTF-8">
-  <title>Orsoyarn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elérhetőség - Orsoyarn</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('aura2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ff758f;
+            text-align: center;
+            line-height: 1.8;
+        }
 
-   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('aura2.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: ff758f;
-      text-align: center;
-    }
-  </style>
+        header {
+            background-color: #ff758f;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.85); /* Kicsit erősebb háttér az olvashatóságért */
+            margin: 50px auto;
+            padding: 40px;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #ff4d6d;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            font-size: 1.1em;
+        }
+
+        .contact-list li {
+            margin: 15px 0;
+        }
+
+        .contact-list a {
+            text-decoration: none;
+            color: #ff758f;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .contact-list a:hover {
+            color: #c9184a;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #ff758f;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
 
-  <h1>Elérhetőség</h1>
-    <p>Instagram: @orsoyarn
-     Facebook: Lux Orsolya
-     Email: orsi.lux@gmail.com</p>
-  <a href="index.html">⬅ Back</a>
+<header>
+    <div style="font-weight: bold;">Orsoyarn</div>
+    <nav>
+        <a href="index.html" style="color: white; text-decoration: none;">Főoldal</a>
+    </nav>
+</header>
+
+<div class="content">
+    <h1>Elérhetőség</h1>
+    
+    <ul class="contact-list">
+        <li><strong>Instagram:</strong> <a href="https://instagram.com/orsoyarn" target="_blank">@orsoyarn</a></li>
+        <li><strong>Facebook:</strong> <a href="https://facebook.com/lux.orsolya" target="_blank">Lux Orsolya</a></li>
+        <li><strong>Email:</strong> <a href="mailto:orsi.lux@gmail.com">orsi.lux@gmail.com</a></li>
+    </ul>
+
+    <a href="index.html" class="back-link">⬅ Vissza a főoldalra</a>
+</div>
 
 </body>
 </html>
